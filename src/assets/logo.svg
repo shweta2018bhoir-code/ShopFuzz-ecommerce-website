@@ -1,0 +1,45 @@
+<svg width="180" height="50" viewBox="0 0 300 80" xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+    <!-- Bag Gradient -->
+    <linearGradient id="bagGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff7eb3"/>
+      <stop offset="30%" stop-color="#ff9a8b"/>
+      <stop offset="60%" stop-color="#ffcc70"/>
+      <stop offset="100%" stop-color="#6a82fb"/>
+    </linearGradient>
+
+    <!-- Text Gradient -->
+    <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4facfe"/>
+      <stop offset="100%" stop-color="#ff7eb3"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Shopping Bag Icon -->
+  <g transform="translate(10,10)">
+    <rect x="0" y="10" width="50" height="45" rx="12" fill="url(#bagGradient)" />
+
+    <!-- Handle -->
+    <path d="M8 12 Q25 -5 42 12" stroke="#ffb347" stroke-width="4" fill="none" />
+
+    <!-- Face -->
+    <circle cx="18" cy="32" r="2.5" fill="#222"/>
+    <circle cx="32" cy="32" r="2.5" fill="#222"/>
+    <path d="M18 38 Q25 44 32 38" stroke="#222" stroke-width="2" fill="none"/>
+
+    <!-- Sparkles -->
+    <circle cx="-5" cy="20" r="2" fill="#ff7eb3"/>
+    <circle cx="55" cy="25" r="2" fill="#6a82fb"/>
+  </g>
+
+  <!-- Text -->
+  <text x="80" y="48"
+        font-family="Poppins, sans-serif"
+        font-size="28"
+        font-weight="700"
+        fill="url(#textGradient)">
+    Shopfuzz
+  </text>
+
+</svg>
