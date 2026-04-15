@@ -30,6 +30,16 @@ function Register() {
        
     }
 
+    const handleGoogleIn = async () => {
+  try {
+    await GoogleIn();
+    navigate("/");
+    alert("You have successfully logged in");
+  } catch (error) {
+    console.log(error.message);
+  }
+};
+
    
 
     
@@ -76,8 +86,8 @@ function Register() {
             <h1 className="p-4 text-center">OR</h1>
                  <div className="p-2 text-center cursor-pointer outline-1 text-blue-700 rounded-2xl hover:bg-blue-600 hover:text-white">
                     <i className="fab fa-google"></i>
-                    <button 
-                    onClick={GoogleIn}
+                    <button type="button"
+                    onClick={handleGoogleIn}
                     className="p-1 cursor-pointer h-full text-gray-800 hover:text-white"> Sign in with Google</button>
 
                  </div>

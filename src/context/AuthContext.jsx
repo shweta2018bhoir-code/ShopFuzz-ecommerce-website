@@ -1,6 +1,5 @@
 import { useState, useContext, createContext, Children, useEffect } from "react";
-import { signInWithEmailAndPassword, 
-    signInWithPopup,
+import { signInWithEmailAndPassword, signInWithPopup, 
     createUserWithEmailAndPassword,
      signOut,
     onAuthStateChanged, } from "firebase/auth";

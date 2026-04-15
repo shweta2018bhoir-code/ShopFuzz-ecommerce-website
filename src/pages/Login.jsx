@@ -50,12 +50,14 @@ function Login() {
                     <input 
                     onChange={(e) => setEmail(e.target.value)}
                     className="w-full p-2 focus:outline-fuchsia-400"
+                    value={email}
                     type="email" placeholder="Enter your email address"/>
                 </div>
                 <div >
                     <p>Password</p>
                     <input 
                     onChange={(e) => setPassword(e.target.value)}
+                    value={password}
                     className="w-full p-2 focus:outline-fuchsia-400"
                     type="password" placeholder="password"/>
                 </div>
@@ -69,6 +71,7 @@ function Login() {
                  <div className="p-2 text-center cursor-pointer outline-1 text-blue-700 rounded-2xl hover:bg-blue-600 hover:text-white">
                     <i className="fab fa-google"></i>
                     <button 
+                    type="button"
                     onClick={handleGoogleIn}
                     className="p-1 cursor-pointer h-full text-gray-800 hover:text-white"> Sign in with Google</button>
 
